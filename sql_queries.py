@@ -17,7 +17,8 @@ time_table_drop = "DROP TABLE IF EXISTS time"
 
 # CREATE TABLES
 
-staging_events_table_create = ("""CREATE TABLE staging_events(
+staging_events_table_create = ("""CREATE TABLE 
+    staging_events(
     event_id INT IDENTITY(0,1),
     artist_name VARCHAR(255),
     auth VARCHAR(50),
@@ -40,7 +41,8 @@ staging_events_table_create = ("""CREATE TABLE staging_events(
     PRIMARY KEY (event_id))
 """)
 
-staging_songs_table_create = ("""CREATE TABLE staging_songs(
+staging_songs_table_create = ("""CREATE TABLE 
+    staging_songs(
     song_id VARCHAR(100),
     num_songs INTEGER,
     artist_id VARCHAR(100),
@@ -54,7 +56,8 @@ staging_songs_table_create = ("""CREATE TABLE staging_songs(
     PRIMARY KEY (song_id))
 """)
 
-songplay_table_create = ( """CREATE TABLE songplays(
+songplay_table_create = ( """CREATE TABLE 
+    songplays(
     songplay_id INT IDENTITY(0,1),
     start_time TIMESTAMP REFERENCES time(start_time),
     user_id VARCHAR(50) REFERENCES users(user_id),
@@ -67,7 +70,8 @@ songplay_table_create = ( """CREATE TABLE songplays(
     PRIMARY KEY (songplay_id))
 """)
 
-user_table_create = ("""CREATE TABLE users(
+user_table_create = ("""CREATE TABLE 
+    users(
     user_id VARCHAR,
     first_name VARCHAR(255),
     last_name VARCHAR(255),
@@ -76,7 +80,8 @@ user_table_create = ("""CREATE TABLE users(
     PRIMARY KEY (user_id))
 """)
 
-song_table_create = ("""CREATE TABLE songs(
+song_table_create = ("""CREATE TABLE 
+    songs(
     song_id VARCHAR(100),
     title VARCHAR(255),
     artist_id VARCHAR(100) NOT NULL,
@@ -85,7 +90,8 @@ song_table_create = ("""CREATE TABLE songs(
     PRIMARY KEY (song_id))
 """)
 
-artist_table_create = ("""CREATE TABLE artists(
+artist_table_create = ("""CREATE TABLE 
+    artists(
     artist_id VARCHAR(100),
     name VARCHAR(255),
     location VARCHAR(255),
@@ -94,7 +100,8 @@ artist_table_create = ("""CREATE TABLE artists(
     PRIMARY KEY (artist_id))
 """)
 
-time_table_create = ("""CREATE TABLE time(
+time_table_create = ("""CREATE TABLE 
+    time(
     start_time TIMESTAMP,
     hour INTEGER,
     day INTEGER,
