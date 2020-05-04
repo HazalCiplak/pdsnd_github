@@ -1,7 +1,9 @@
 # Cloud Data Warehouse AWS
-2020/04/08
+2020/03/08
 
 **Introduction**
+
+This project is recreated for my github project!!!
 
 This Udacity Data Engineering nanodegree project creates an cloud Data Warehouse by using AWS and ETL process for a music app, Sparkify. 
 
