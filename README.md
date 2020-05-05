@@ -15,4 +15,5 @@ The source data is in log files given the Amazon s3 bucket:
 - Log data json path: s3://udacity-dend/log_json_path.json
 
 Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+https://github.com/HazalCiplak/Cloud-Data-Warehouse-AWS
+https://github.com/udacity/pdsnd_github
